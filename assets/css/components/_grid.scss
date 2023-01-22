@@ -1,0 +1,64 @@
+$width : 1200;
+$column : 12;
+
+.container {
+    max-width: $width * 1px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex {
+    display: flex;
+}
+.f-wrap {
+    flex-wrap: wrap;
+}
+.f-column-reserve {
+    flex-direction: column-reserve;
+}
+.f-row-reserve {
+    flex-direction: row-reserve;
+}
+.f-column {
+    flex-direction: column;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.jc-center {
+    justify-content: center;
+}
+.ai-center {
+    align-items: center;
+}
+.ai-start {
+    align-items: flex-start;
+}
+.ai-end {
+    align-items: flex-end;
+}
+.p-absolute {
+    position: absolute;
+}
+.p-relative {
+    position: relative;
+}
+.p-fixed {
+    position: fixed;
+}
+.text-center {
+    text-align: center;
+}
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: calc((100%/($column/$i)) - 3%);
+        margin: 1.5%;
+    }
+}
+
+
+

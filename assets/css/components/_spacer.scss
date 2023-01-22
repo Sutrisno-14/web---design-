@@ -1,0 +1,12 @@
+.section-spacerFirst {
+    padding: 3% 0;
+}
+.section-spacer {
+    padding-bottom: 3%;
+}
+
+@for $j from 1 through 10 {
+    .spacer-#{$j*5} {
+        margin-top: calc($j*5) * 1px;
+    }
+}
